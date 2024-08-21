@@ -4,7 +4,7 @@
   "sshPort": 2022,
   "user": "cust016",
   "sshKeyFile": "/home/developer/.ssh/id_test4z",
-  "zosWorkspacePath": "/u/users/cust016/test4z-tutorial",
+  "zosWorkspacePath": "/u/users/cust016/workshop",
   "createZfs": false,
   "testHlq": "CUST016.WORKSHOP",
   "zosCodepage": 1140,
