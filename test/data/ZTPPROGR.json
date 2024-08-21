@@ -1,0 +1,1023 @@
+{
+  "codepage": 1140,
+  "rundate": "2024080213063458",
+  "ignorelist": [],
+  "calls": [
+    {
+      "program": {
+        "command": "CALL",
+        "module": "ZTPPROGR",
+        "csect": "ZTPPROGR",
+        "before": {},
+        "calls": [
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "A"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": " "
+                }
+              },
+              "cputime": "0.000163",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "A"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "AARDVARK"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "B"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "AARDVARK"
+                }
+              },
+              "cputime": "0.007536",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "B"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "BABOON"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "C"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "BABOON"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "C"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "CAMEL"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "D"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "CAMEL"
+                }
+              },
+              "cputime": "0.007005",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "D"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "DEER"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "E"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "DEER"
+                }
+              },
+              "cputime": "0.006842",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "E"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "EAGLE"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "F"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "EAGLE"
+                }
+              },
+              "cputime": "0.007005",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "F"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "FALCON"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "G"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "FALCON"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "G"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "GAZELLE"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "H"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "GAZELLE"
+                }
+              },
+              "cputime": "0.007333",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "H"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "HAMSTER"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "I"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "HAMSTER"
+                }
+              },
+              "cputime": "0.007333",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "I"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "IGUANA"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "J"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "IGUANA"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "J"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "JACKAL"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "K"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "JACKAL"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "K"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "KANGAROO"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "L"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "KANGAROO"
+                }
+              },
+              "cputime": "0.007497",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "L"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "LEMUR"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "M"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "LEMUR"
+                }
+              },
+              "cputime": "0.007005",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "M"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "MACAW"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "N"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "MACAW"
+                }
+              },
+              "cputime": "0.007005",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "N"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "NEWT"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "O"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "NEWT"
+                }
+              },
+              "cputime": "0.006842",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "O"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "OCTOPUS"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "P"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "OCTOPUS"
+                }
+              },
+              "cputime": "0.007333",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "P"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "PANTHER"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "Q"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "PANTHER"
+                }
+              },
+              "cputime": "0.007333",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "Q"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "QUAIL"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "R"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "QUAIL"
+                }
+              },
+              "cputime": "0.007005",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "R"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "RABBIT"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "S"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "RABBIT"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "S"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "SCORPION"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "T"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "SCORPION"
+                }
+              },
+              "cputime": "0.007497",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "T"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "TIGER"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "U"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "TIGER"
+                }
+              },
+              "cputime": "0.007005",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "U"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "URCHIN"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "V"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "URCHIN"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "V"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "VOLE"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "W"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "VOLE"
+                }
+              },
+              "cputime": "0.006842",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "W"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "WALRUS"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "X"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "WALRUS"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "X"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "XENOPS"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "Y"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "XENOPS"
+                }
+              },
+              "cputime": "0.007169",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "Y"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "YAK"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "Z"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "YAK"
+                }
+              },
+              "cputime": "0.006678",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "000001AC"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "Z"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "ZEBRA"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPPROGR",
+              "csect": "ZTPCALLD",
+              "before": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "9"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "ZEBRA"
+                }
+              },
+              "cputime": "0.007005",
+              "from": {
+                "csect": "ZTPPROGR",
+                "offset": "00000240"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 1,
+                  "variable": "LS-INPUT-LETTER",
+                  "value": "9"
+                },
+                "arg2": {
+                  "length": 10,
+                  "variable": "LS-OUTPUT-ANIMAL-NAME",
+                  "value": "??????????"
+                }
+              }
+            }
+          }
+        ],
+        "cputime": "0.000000",
+        "from": {
+          "csect": "UNKNOWN",
+          "offset": "0000105A"
+        },
+        "retcd": 4,
+        "after": {}
+      }
+    }
+  ]
+}

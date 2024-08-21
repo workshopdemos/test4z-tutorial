@@ -1,0 +1,1662 @@
+{
+  "codepage": 1140,
+  "rundate": "2024071814551467",
+  "ignorelist": [],
+  "calls": [
+    {
+      "program": {
+        "command": "CALL",
+        "module": "ZTPHRNMM",
+        "csect": "ZTPHRNMM",
+        "before": {},
+        "calls": [
+          {
+            "qsam": {
+              "command": "OPEN OUTPUT",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000055E"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "OPEN INPUT",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000005AC"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "00000290"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "B420042"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": [
+                    "B420042",
+                    {
+                      "repeat": 120,
+                      "hex": true,
+                      "data": "00"
+                    }
+                  ]
+                }
+              },
+              "cputime": "4.493148",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B420042007000770061006800750020000700020025002400250060007200130069006000610027000200070011003100530008001800540014000800250057"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B420042007000770061006800750020000700020025002400250060007200130069006000610027000200070011003100530008001800540014000800250057"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": {
+                    "repeat": 25,
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B420042007000770061006800750020000700020025002400250060007200130069006000610027000200070011003100530008001800540014000800250057"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B420042090036007703010407"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: B420042 Score:  9 Avg:   36 Max:   77 Hot: 3",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "B000217"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B000217007000770061006800750020000700020025002400250060007200130069006000610027000200070011003100530008001800540014000800250057"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B000217002100000079005700630002005400260016005700780009006400450027004100030069001500230063005000030065005000130074006200170059"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B000217002100000079005700630002005400260016005700780009006400450027004100030069001500230063005000030065005000130074006200170059"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B420042090036007703010407"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B000217002100000079005700630002005400260016005700780009006400450027004100030069001500230063005000030065005000130074006200170059"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B000217100040007903020105"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: B000217 Score: 10 Avg:   40 Max:   79 Hot: 3",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "M120146"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M120146002100000079005700630002005400260016005700780009006400450027004100030069001500230063005000030065005000130074006200170059"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M120146024402090145027701540233019202370123011800890064003902460223021600890198008601480108001401410242013902450034013600280007"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M120146024402090145027701540233019202370123011800890064003902460223021600890198008601480108001401410242013902450034013600280007"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B000217100040007903020105"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M120146024402090145027701540233019202370123011800890064003902460223021600890198008601480108001401410242013902450034013600280007"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "M120146070147027702010616"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: M120146 Score:  7 Avg:  147 Max:  277 Hot: 2",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "P002893"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "P002893024402090145027701540233019202370123011800890064003902460223021600890198008601480108001401410242013902450034013600280007"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "P002893133207631079144914860133155212951266136909330914006201700963100114110772098704621594087711301418098313610109066514960991"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "P002893133207631079144914860133155212951266136909330914006201700963100114110772098704621594087711301418098313610109066514960991"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "M120146070147027702010616"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "P002893133207631079144914860133155212951266136909330914006201700963100114110772098704621594087711301418098313610109066514960991"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "P002893031000159400212717"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: P002893 Score:  3 Avg: 1000 Max: 1594 Hot: 0",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "B080712"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B080712133207631079144914860133155212951266136909330914006201700963100114110772098704621594087711301418098313610109066514960991"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B080712006400540060004700560029003700420050003600360065006400280064003500190015000300230073003100120062004000320032006600110040"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B080712006400540060004700560029003700420050003600360065006400280064003500190015000300230073003100120062004000320032006600110040"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "P002893031000159400212717"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B080712006400540060004700560029003700420050003600360065006400280064003500190015000300230073003100120062004000320032006600110040"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B080712090040007302020123"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: B080712 Score:  9 Avg:   40 Max:   73 Hot: 2",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "B240924"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B240924006400540060004700560029003700420050003600360065006400280064003500190015000300230073003100120062004000320032006600110040"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B240924006700050037004700320061007700270055004300660037005800330001007700380069004100420067004500120008001100600065004000070073"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B240924006700050037004700320061007700270055004300660037005800330001007700380069004100420067004500120008001100600065004000070073"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B080712090040007302020123"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B240924006700050037004700320061007700270055004300660037005800330001007700380069004100420067004500120008001100600065004000070073"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B240924100043007702020109"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: B240924 Score: 10 Avg:   43 Max:   77 Hot: 2",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "B049846"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B049846006700050037004700320061007700270055004300660037005800330001007700380069004100420067004500120008001100600065004000070073"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B049846003000780018007200710015005600450006005800590037003500740037006600150019002200490072005400210051001300490039004400790024"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B049846003000780018007200710015005600450006005800590037003500740037006600150019002200490072005400210051001300490039004400790024"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B240924100043007702020109"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B049846003000780018007200710015005600450006005800590037003500740037006600150019002200490072005400210051001300490039004400790024"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B049846100043007903020104"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: B049846 Score: 10 Avg:   43 Max:   79 Hot: 3",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "M058673"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M058673003000780018007200710015005600450006005800590037003500740037006600150019002200490072005400210051001300490039004400790024"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M058673012600400052004900570197027102490107022500970258009901420176017101550034004800800134001900740095009200310018007000000046"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M058673012600400052004900570197027102490107022500970258009901420176017101550034004800800134001900740095009200310018007000000046"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B049846100043007903020104"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "M058673012600400052004900570197027102490107022500970258009901420176017101550034004800800134001900740095009200310018007000000046"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "M058673100107027102020109"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: M058673 Score: 10 Avg:  107 Max:  271 Hot: 2",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "B198723"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B198723012600400052004900570197027102490107022500970258009901420176017101550034004800800134001900740095009200310018007000000046"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B198723007500420015000700200026001900710073006200500032003200440076000400500079002700130043004900420045001300030039000000390025"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B198723007500420015000700200026001900710073006200500032003200440076000400500079002700130043004900420045001300030039000000390025"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "M058673100107027102020109"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B198723007500420015000700200026001900710073006200500032003200440076000400500079002700130043004900420045001300030039000000390025"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B198723090037007902020120"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: B198723 Score:  9 Avg:   37 Max:   79 Hot: 2",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 7,
+                  "value": "B110906"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNDD",
+              "csect": "ZTPHRNDD",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B110906007500420015000700200026001900710073006200500032003200440076000400500079002700130043004900420045001300030039000000390025"
+                }
+              },
+              "cputime": "10.563131",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000003C4"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B110906004600760014004900070006001400790058002100800060002400600068007500150037001300180019006800630069003700530044007100250053"
+                }
+              }
+            }
+          },
+          {
+            "program": {
+              "command": "CALL",
+              "module": "ZTPHRNAA",
+              "csect": "ZTPHRNAA",
+              "before": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B110906004600760014004900070006001400790058002100800060002400600068007500150037001300180019006800630069003700530044007100250053"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B198723090037007902020120"
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000042C"
+              },
+              "retcd": 0,
+              "after": {
+                "arg1": {
+                  "length": 127,
+                  "variable": "LS-WIDGET-SALES-RECENT-REC",
+                  "value": "B110906004600760014004900070006001400790058002100800060002400600068007500150037001300180019006800630069003700530044007100250053"
+                },
+                "arg2": {
+                  "length": 25,
+                  "variable": "LS-WIDGET-SALES-PROMO-REC",
+                  "value": "B110906100044008002020113"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Widget: B110906 Score: 10 Avg:   44 Max:   80 Hot: 2",
+                    {
+                      "repeat": 28,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000050A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000034A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "10"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "10"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "10"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "CLOSE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESWCH",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "000005FC"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "CLOSE",
+              "module": "ZTPHRNMM",
+              "dd": "SALESPRM",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPHRNMM",
+                "offset": "0000063E"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          }
+        ],
+        "cputime": "8.524962",
+        "from": {
+          "csect": "UNKNOWN",
+          "offset": "0000038A"
+        },
+        "retcd": 0,
+        "after": {}
+      }
+    }
+  ],
+  "qsamdata": {
+    "qsamlist": [
+      {
+        "file": "SALESPRM",
+        "maxlength": 80
+      },
+      {
+        "file": "SALESWCH",
+        "maxlength": 7
+      }
+    ]
+  }
+}

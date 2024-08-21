@@ -1,0 +1,34 @@
+{
+  "appLoadLibraries": [],
+  "bindSyslibs": [
+    "CEE.SCEELKED"
+  ],
+  "copyPaths": [
+    "src/cpy"
+  ],
+  "cobolDb2ProgramsGlobs": [
+    "src/ZTDB2*.cbl"
+  ],
+  "cobolCicsProgramsGlobs": [
+    "src/ZTPCIC*.cbl"
+  ],
+  "db2TestGlobs": [
+    "test/ZTTDB2*.cbl",
+    "test/ZTTMOCKD.cbl"
+  ],
+  "cicsTestGlobs": [
+    "test/ZTTCIC*.cbl"
+  ],
+  "optionGlobs": [
+    {
+      "//": "Statically link ZTPCALLD into ZTPPROGR",
+      "globs": [
+        "src/ZTPPROGR.cbl"
+      ],
+      "bindDeps": [
+        "src/ZTPCALLD.cbl"
+      ]
+    }
+  ],
+  "sdsnload": null
+}

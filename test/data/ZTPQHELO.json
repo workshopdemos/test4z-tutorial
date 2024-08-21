@@ -1,0 +1,1355 @@
+{
+  "codepage": 1140,
+  "rundate": "2024080213254930",
+  "ignorelist": [],
+  "calls": [
+    {
+      "program": {
+        "command": "CALL",
+        "module": "ZTPQHELO",
+        "csect": "ZTPQHELO",
+        "before": {},
+        "calls": [
+          {
+            "qsam": {
+              "command": "OPEN INPUT",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.007480",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "000001A2"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "OPEN OUTPUT",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {},
+              "cputime": "0.007480",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "000001EA"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000022A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Chaithanya",
+                    {
+                      "repeat": 70,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Chaithanya!",
+                    {
+                      "repeat": 62,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Dan",
+                    {
+                      "repeat": 77,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Dan!",
+                    {
+                      "repeat": 69,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Eleni",
+                    {
+                      "repeat": 75,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Eleni!",
+                    {
+                      "repeat": 67,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Jeff",
+                    {
+                      "repeat": 76,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Jeff!",
+                    {
+                      "repeat": 68,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Karthik",
+                    {
+                      "repeat": 73,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Karthik!",
+                    {
+                      "repeat": 65,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Mike",
+                    {
+                      "repeat": 76,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Mike!",
+                    {
+                      "repeat": 68,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Olga",
+                    {
+                      "repeat": 76,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Olga!",
+                    {
+                      "repeat": 68,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "PetrP",
+                    {
+                      "repeat": 75,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, PetrP!",
+                    {
+                      "repeat": 67,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "PetrV",
+                    {
+                      "repeat": 75,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, PetrV!",
+                    {
+                      "repeat": 67,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Ritika",
+                    {
+                      "repeat": 74,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Ritika!",
+                    {
+                      "repeat": 66,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Vibhore",
+                    {
+                      "repeat": 73,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Vibhore!",
+                    {
+                      "repeat": 65,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Steve",
+                    {
+                      "repeat": 75,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Steve!",
+                    {
+                      "repeat": 67,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Swathi",
+                    {
+                      "repeat": 74,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Swathi!",
+                    {
+                      "repeat": 66,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                },
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Tim",
+                    {
+                      "repeat": 77,
+                      "data": " "
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "WRITE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {
+                "ioarea": {
+                  "length": 80,
+                  "value": [
+                    "Hello, Tim!",
+                    {
+                      "repeat": 69,
+                      "data": " "
+                    }
+                  ]
+                }
+              },
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000032A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "READ",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.000000",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "0000036A"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "10"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "10"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "10"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "CLOSE",
+              "module": "ZTPQHELO",
+              "dd": "SYSIN1",
+              "before": {},
+              "cputime": "0.003923",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "000003B8"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status1": {
+                  "length": 2,
+                  "value": "00"
+                }
+              }
+            }
+          },
+          {
+            "qsam": {
+              "command": "CLOSE",
+              "module": "ZTPQHELO",
+              "dd": "SYSOUT1",
+              "before": {},
+              "cputime": "0.003923",
+              "from": {
+                "csect": "ZTPQHELO",
+                "offset": "000003F4"
+              },
+              "after": {
+                "cc": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                },
+                "status": {
+                  "length": 1,
+                  "value": {
+                    "hex": true,
+                    "data": "00"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "cputime": "0.345990",
+        "from": {
+          "csect": "UNKNOWN",
+          "offset": "0000105A"
+        },
+        "retcd": 0,
+        "after": {}
+      }
+    }
+  ],
+  "qsamdata": {
+    "qsamlist": [
+      {
+        "file": "SYSIN1",
+        "maxlength": 80
+      },
+      {
+        "file": "SYSOUT1",
+        "maxlength": 80
+      }
+    ]
+  }
+}

@@ -1,0 +1,1794 @@
+{
+ "codepage": 1140, 
+ "rundate": "2024080313324650", 
+ "ignorelist": [
+ ], 
+ "calls": [
+  {"program": {"command": "CALL", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+    "before": {
+     "arg1": {"length": 102, "variable": "LS-PARM", "value": [
+       {"hex": true, "data": "0000"}, 
+       "ZTDB2PHNDEFAULT", 
+       {"repeat": 85, "data": " "}
+      ]}
+    }, "calls": [
+     {"db2": {"command": "OPEN", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0000"}}, 
+          {"sqpctype": {"hex": true, "data": "0032"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0003"}}, 
+          {"sqpsnumb": {"hex": true, "data": "00000235"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.014153", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001CEE"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": " N   1  "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000001"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0005"}, 
+          "Adams", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0004"}, 
+          "John", 
+          {"repeat": 36, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551735"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.001529", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000002"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0008"}, 
+          "Franklin", 
+          {"repeat": 32, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0003"}, 
+          "Ben", 
+          {"repeat": 37, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551705"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000003"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0007"}, 
+          "Madison", 
+          {"repeat": 33, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0005"}, 
+          "James", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551717"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000004"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0009"}, 
+          "Jefferson", 
+          {"repeat": 31, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0006"}, 
+          "Thomas", 
+          {"repeat": 34, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551709"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000005"}, 
+        "arg2": {"length": 1, "value": "K"}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "000A"}, 
+          "Washington", 
+          {"repeat": 30, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0006"}, 
+          "George", 
+          {"repeat": 34, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551732"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000907", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000064"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSNXEBR "}, 
+          {"sqlerrd": {"hex": true, "data": "FFFFFF920000000000000000FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "02000"}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "CLOSE", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0000"}}, 
+          {"sqpctype": {"hex": true, "data": "002D"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0005"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000024F"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.001439", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001F50"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "OPEN OUTPUT", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+       }, 
+       "cputime": "0.004913", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000C52"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "OPEN INPUT", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.009457", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000CA0"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.001431", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000CE0"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "S000005Validate", 
+          {"repeat": 185, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "SELECT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0008"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E90"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB6ECC"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E7"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001FE"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000005"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001AFA"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000005"}, 
+        "arg2": {"length": 1, "value": "K"}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "000A"}, 
+          "Washington", 
+          {"repeat": 30, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0006"}, 
+          "George", 
+          {"repeat": 34, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551732"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=S KEY=000005 OK=Y ST=Success              MSG=Validate             LN=Washington           FN=George               PH=9195551732"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "K000001Keep", 
+          {"repeat": 189, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "SELECT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0008"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E90"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB6ECC"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E7"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001FE"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000001"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001AFA"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000001"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0005"}, 
+          "Adams", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0004"}, 
+          "John", 
+          {"repeat": 36, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551735"}
+       }
+      }
+     }, 
+     {"db2": {"command": "UPDATE", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4000"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0007"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E10"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00EA"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001B0"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000001"}
+       }, 
+       "cputime": "0.000720", 
+       "from": {"csect": "ZTDB2PHN", "offset": "000018AC"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": {"hex": true, "data": "000000000000000000000001FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=K KEY=000001 OK=Y ST=Success              MSG=Keep                 LN=Adams                FN=John                 PH=9195551735"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "U000001Work phone", 
+          {"repeat": 110, "data": " "}, 
+          "9195551212", 
+          {"repeat": 63, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "SELECT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0008"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E90"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB6ECC"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E7"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001FE"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000001"}
+       }, 
+       "cputime": "0.000962", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001AFA"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000001"}, 
+        "arg2": {"length": 1, "value": "K"}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0005"}, 
+          "Adams", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0004"}, 
+          "John", 
+          {"repeat": 36, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551735"}
+       }
+      }
+     }, 
+     {"db2": {"command": "UPDATE", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4000"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0005"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6C68"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00EA"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000014B"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 10, "value": "9195551212"}, 
+        "arg2": {"length": 6, "value": "000001"}
+       }, 
+       "cputime": "0.000590", 
+       "from": {"csect": "ZTDB2PHN", "offset": "0000152A"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": {"hex": true, "data": "000000000000000000000001FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=U KEY=000001 OK=Y ST=Success              MSG=Work phone           LN=Adams                FN=John                 PH=9195551212"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "U000002Update phone", 
+          {"repeat": 108, "data": " "}, 
+          "9195554242", 
+          {"repeat": 63, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "SELECT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0008"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E90"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB6ECC"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E7"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001FE"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000002"}
+       }, 
+       "cputime": "0.001548", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001AFA"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000002"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0008"}, 
+          "Franklin", 
+          {"repeat": 32, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0003"}, 
+          "Ben", 
+          {"repeat": 37, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551705"}
+       }
+      }
+     }, 
+     {"db2": {"command": "UPDATE", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4000"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0005"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6C68"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00EA"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000014B"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 10, "value": "9195554242"}, 
+        "arg2": {"length": 6, "value": "000002"}
+       }, 
+       "cputime": "0.000274", 
+       "from": {"csect": "ZTDB2PHN", "offset": "0000152A"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": {"hex": true, "data": "000000000000000000000001FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=U KEY=000002 OK=Y ST=Success              MSG=Update phone         LN=Franklin             FN=Ben                  PH=9195554242"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "C000006New employee", 
+          {"repeat": 28, "data": " "}, 
+          "Adams", 
+          {"repeat": 35, "data": " "}, 
+          "Quincy", 
+          {"repeat": 34, "data": " "}, 
+          "9195551767", 
+          {"repeat": 63, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "SELECT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0008"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E90"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB6ECC"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E7"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001FE"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000006"}
+       }, 
+       "cputime": "0.000083", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001AFA"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000064"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSNXEBR "}, 
+          {"sqlerrd": {"hex": true, "data": "FFFFFF600000000000000000FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "02000"}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "INSERT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4000"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0006"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6D10"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E8"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000017C"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000006"}, 
+        "arg2": {"length": 40, "value": [
+          "Adams", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg3": {"length": 40, "value": [
+          "Quincy", 
+          {"repeat": 34, "data": " "}
+         ]}, 
+        "arg4": {"length": 10, "value": "9195551767"}
+       }, 
+       "cputime": "0.001544", 
+       "from": {"csect": "ZTDB2PHN", "offset": "0000172E"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": {"hex": true, "data": "000000000000000000000001FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=C KEY=000006 OK=Y ST=Success              MSG=New employee         LN=Adams                FN=Quincy               PH=9195551767"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "D000003Left company", 
+          {"repeat": 181, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "SELECT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0008"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E90"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB6ECC"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E7"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001FE"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000003"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001AFA"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000003"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0007"}, 
+          "Madison", 
+          {"repeat": 33, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0005"}, 
+          "James", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551717"}
+       }
+      }
+     }, 
+     {"db2": {"command": "DELETE", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4000"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0002"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6A98"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E9"}}, 
+          {"sqpsnumb": {"hex": true, "data": "00000111"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000003"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "0000121E"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": {"hex": true, "data": "000000000000000000000001FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=D KEY=000003 OK=Y ST=Success              MSG=Left company         LN=Madison              FN=James                PH=9195551717"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "X000000Invalid request", 
+          {"repeat": 178, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=X KEY=000000 OK=N ST=Invalid request      MSG=Invalid request      LN=                     FN=                     PH="}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}, 
+        "ioarea": {"length": 200, "value": [
+          "U000002Correct name", 
+          {"repeat": 68, "data": " "}, 
+          "Benjamin", 
+          {"repeat": 105, "data": " "}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "SELECT", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0008"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6E90"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB6ECC"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00E7"}}, 
+          {"sqpsnumb": {"hex": true, "data": "000001FE"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 6, "value": "000002"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001AFA"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000002"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0008"}, 
+          "Franklin", 
+          {"repeat": 32, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0003"}, 
+          "Ben", 
+          {"repeat": 37, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195554242"}
+       }
+      }
+     }, 
+     {"db2": {"command": "UPDATE", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "4000"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0004"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "3BCB6BC0"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "00EA"}}, 
+          {"sqpsnumb": {"hex": true, "data": "00000141"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}, 
+        "arg1": {"length": 40, "value": [
+          "Benjamin", 
+          {"repeat": 32, "data": " "}
+         ]}, 
+        "arg2": {"length": 6, "value": "000002"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "0000148A"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": {"hex": true, "data": "000000000000000000000001FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"qsam": {"command": "WRITE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+        "ioarea": {"length": 132, "value": "REQ=U KEY=000002 OK=Y ST=Success              MSG=Correct name         LN=Franklin             FN=Benjamin             PH=9195554242"}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001C42"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "READ", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.001541", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000D5A"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "10"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "10"}}, 
+        "status1": {"length": 2, "value": "10"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "CLOSE", "module": "ZTDB2PHN", "dd": "PHUPDATE", 
+       "before": {
+       }, 
+       "cputime": "0.003212", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000DA8"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"qsam": {"command": "CLOSE", "module": "ZTDB2PHN", "dd": "PHLOG", 
+       "before": {
+       }, 
+       "cputime": "0.004034", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00000DEA"} , 
+       "after": {
+        "cc": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status": {"length": 1, "value": {"hex": true, "data": "00"}}, 
+        "status1": {"length": 2, "value": "00"}
+       }
+      }
+     }, 
+     {"db2": {"command": "OPEN", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0000"}}, 
+          {"sqpctype": {"hex": true, "data": "0032"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0003"}}, 
+          {"sqpsnumb": {"hex": true, "data": "00000235"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.001508", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001CEE"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": " N   1  "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000916", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000001"}, 
+        "arg2": {"length": 1, "value": "K"}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0005"}, 
+          "Adams", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0004"}, 
+          "John", 
+          {"repeat": 36, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551212"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.001395", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000002"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0008"}, 
+          "Franklin", 
+          {"repeat": 32, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0028"}, 
+          "Benjamin", 
+          {"repeat": 32, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195554242"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000004"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0009"}, 
+          "Jefferson", 
+          {"repeat": 31, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0006"}, 
+          "Thomas", 
+          {"repeat": 34, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551709"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.001522", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000005"}, 
+        "arg2": {"length": 1, "value": "K"}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "000A"}, 
+          "Washington", 
+          {"repeat": 30, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0006"}, 
+          "George", 
+          {"repeat": 34, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551732"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}, 
+        "arg1": {"length": 6, "value": "000006"}, 
+        "arg2": {"length": 1, "value": " "}, 
+        "arg3": {"length": 42, "value": [
+          {"hex": true, "data": "0028"}, 
+          "Adams", 
+          {"repeat": 35, "data": " "}
+         ]}, 
+        "arg4": {"length": 42, "value": [
+          {"hex": true, "data": "0028"}, 
+          "Quincy", 
+          {"repeat": 34, "data": " "}
+         ]}, 
+        "arg5": {"length": 10, "value": "9195551767"}
+       }
+      }
+     }, 
+     {"db2": {"command": "FETCH", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0400"}}, 
+          {"sqpctype": {"hex": true, "data": "001E"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "3BCB7038"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0004"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000023A"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.000000", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001D64"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000064"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSNXEBR "}, 
+          {"sqlerrd": {"hex": true, "data": "FFFFFF920000000000000000FFFFFFFF0000000000000000"}}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "02000"}
+         ]}
+       }
+      }
+     }, 
+     {"db2": {"command": "CLOSE", "module": "ZTDB2PHN", "csect": "ZTDB2PHN", 
+       "before": {
+        "sqlda": {"length": 46, "value": [
+          {"sqpcblth": {"hex": true, "data": "0040"}}, 
+          {"sqpcbflg": {"hex": true, "data": "0000"}}, 
+          {"sqpctype": {"hex": true, "data": "002D"}}, 
+          {"sqppgmnm": [
+            "!èàâ", 
+            {"hex": true, "data": "3250484E"}
+           ]}, 
+          {"sqptime1": {"hex": true, "data": "1BEFB61C"}}, 
+          {"sqptime2": {"hex": true, "data": "1BA1C8A1"}}, 
+          {"sqpsectn": {"hex": true, "data": "0001"}}, 
+          {"sqpcaptr": {"hex": true, "data": "3BCB68F0"}}, 
+          {"sqpvpptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpapptr": {"hex": true, "data": "00000000"}}, 
+          {"sqpfillr": {"hex": true, "data": "04B8"}}, 
+          {"sqpstype": {"hex": true, "data": "0005"}}, 
+          {"sqpsnumb": {"hex": true, "data": "0000024F"}}, 
+          {"sqpplflg": {"hex": true, "data": "0000"}}
+         ]}
+       }, 
+       "cputime": "0.001414", 
+       "from": {"csect": "ZTDB2PHN", "offset": "00001F50"} , 
+       "after": {
+        "sqlca": {"length": 136, "value": [
+          {"sqlcaid": "SQLCA   "}, 
+          {"sqlcabc": {"hex": true, "data": "00000088"}}, 
+          {"sqlcode": {"hex": true, "data": "00000000"}}, 
+          {"sqlerrml": {"hex": true, "data": "0000"}}, 
+          {"sqlerrmc": {"repeat": 70, "data": " "}}, 
+          {"sqlerrp": "DSN     "}, 
+          {"sqlerrd": [
+            {"repeat": 12, "hex": true, "data": "00"}, 
+            {"hex": true, "data": "FFFFFFFF0000000000000000"}
+           ]}, 
+          {"sqlwarn": "        "}, 
+          {"sqlext": "   "}, 
+          {"sqlstate": "00000"}
+         ]}
+       }
+      }
+     }
+    ], 
+    "cputime": "0.000000", 
+    "from": {"csect": "UNKNOWN", "offset": "003378FE"} , 
+    "retcd": 0, 
+    "after": {
+     "arg1": {"length": 102, "variable": "LS-PARM", "value": [
+       {"hex": true, "data": "0000"}, 
+       "ZTDB2PHNDEFAULT", 
+       {"repeat": 85, "data": " "}
+      ]}
+    }
+   }
+  }
+ ], "qsamdata": {
+  "qsamlist": [
+   {"file": "PHLOG", "maxlength": 132}, 
+   {"file": "PHUPDATE", "maxlength": 200}
+  ]
+ }
+}

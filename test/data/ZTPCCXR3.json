@@ -1,0 +1,398 @@
+{
+ "codepage": 1140,
+ "rundate": "2024072211055826",
+ "channel": [
+  {"identifier": "DFHTRANSACTION", "container": "MYCONTAINER", "value": [{"hex": true, "data": "E4F0F0F0F0F0F1C67ED1D6C8D5"}]}
+ ],
+ "ignorelist": [
+ ],
+ "calls": [
+  {"program": {"command": "CALL", "module": "ZTPCICST", "csect": "ZTPCICST",
+    "before": {
+     "arg1": {"length": 85, "value": [
+       {"hex": true, "data": "0000000000000000"},
+       "TEST",
+       {"repeat": 73, "hex": true, "data": "00"}
+      ]},
+     "arg2": {"length": 0, "note": "unknown length set as 0", "value": {"hex": true, "data": ""}}
+    }, "calls": [
+     {"cics": {"command": "GET CONTAINER", "module": "ZTPCICST", "csect": "ZTPCICST",
+       "before": {
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "ein": {"length": 15, "value": {"hex": true, "data": "341470000720000002000000000000"}},
+        "container": {"length": 16, "value": "MYCONTAINER"},
+        "flength": {"length": 4, "value": {"hex": true, "data": "00000064"}},
+        "channel": {"length": 16, "value": "DFHTRANSACTION"}
+       },
+       "cputime": "0.000000",
+       "from": {"csect": "ZTPCICST", "offset": "000003A8"} ,
+       "after": {
+        "eib": {"length": 85, "value": [
+          {"eibtime": {"hex": true, "data": "00000000"}},
+          {"eibdate": {"hex": true, "data": "00000000"}},
+          {"eibtrnid": "TEST"},
+          {"eibtaskn": {"hex": true, "data": "00000000"}},
+          {"eibtrmid": {"hex": true, "data": "00000000"}},
+          {"eibrsvd1": {"hex": true, "data": "0000"}},
+          {"eibcposn": {"hex": true, "data": "0000"}},
+          {"eibcalen": {"hex": true, "data": "0000"}},
+          {"eibaid": {"hex": true, "data": "00"}},
+          {"eibfn": {"hex": true, "data": "3414"}},
+          {"eibrcode": {"hex": true, "data": "000000000000"}},
+          {"eibds": {"hex": true, "data": "0000000000000000"}},
+          {"eibreqid": {"hex": true, "data": "0000000000000000"}},
+          {"eibrsrce": {"hex": true, "data": "0000000000000000"}},
+          {"eibsync": {"hex": true, "data": "00"}},
+          {"eibfree": {"hex": true, "data": "00"}},
+          {"eibrecv": {"hex": true, "data": "00"}},
+          {"eibsend": {"hex": true, "data": "00"}},
+          {"eibatt": {"hex": true, "data": "00"}},
+          {"eibeoc": {"hex": true, "data": "00"}},
+          {"eibfmh": {"hex": true, "data": "00"}},
+          {"eibcompl": {"hex": true, "data": "00"}},
+          {"eibsig": {"hex": true, "data": "00"}},
+          {"eibconf": {"hex": true, "data": "00"}},
+          {"eiberr": {"hex": true, "data": "00"}},
+          {"eiberrcd": {"hex": true, "data": "00000000"}},
+          {"eibsynrb": {"hex": true, "data": "00"}},
+          {"eibnodat": {"hex": true, "data": "00"}},
+          {"eibresp": {"hex": true, "data": "00000000"}},
+          {"eibresp2": {"hex": true, "data": "00000000"}},
+          {"eibrldbk": {"hex": true, "data": "00"}}
+         ]},
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "into": {"length": 100, "value": [
+          "U000001F=JOHN",
+          {"repeat": 87, "data": " "}
+         ]},
+        "flength": {"length": 4, "value": {"hex": true, "data": "0000000D"}}
+       }
+      }
+     },
+     {"cics": {"command": "ASKTIME", "module": "ZTPCICST", "csect": "ZTPCICST",
+       "before": {
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "ein": {"length": 13, "value": {"hex": true, "data": "4A028000078000000000000000"}}
+       },
+       "cputime": "0.000000",
+       "from": {"csect": "ZTPCICST", "offset": "000003DE"} ,
+       "after": {
+        "eib": {"length": 85, "value": [
+          {"eibtime": {"hex": true, "data": "0110558C"}},
+          {"eibdate": {"hex": true, "data": "0124204F"}},
+          {"eibtrnid": "TEST"},
+          {"eibtaskn": {"hex": true, "data": "00000000"}},
+          {"eibtrmid": {"hex": true, "data": "00000000"}},
+          {"eibrsvd1": {"hex": true, "data": "0000"}},
+          {"eibcposn": {"hex": true, "data": "0000"}},
+          {"eibcalen": {"hex": true, "data": "0000"}},
+          {"eibaid": {"hex": true, "data": "00"}},
+          {"eibfn": {"hex": true, "data": "4A02"}},
+          {"eibrcode": {"hex": true, "data": "000000000000"}},
+          {"eibds": {"hex": true, "data": "0000000000000000"}},
+          {"eibreqid": {"hex": true, "data": "0000000000000000"}},
+          {"eibrsrce": {"hex": true, "data": "0000000000000000"}},
+          {"eibsync": {"hex": true, "data": "00"}},
+          {"eibfree": {"hex": true, "data": "00"}},
+          {"eibrecv": {"hex": true, "data": "00"}},
+          {"eibsend": {"hex": true, "data": "00"}},
+          {"eibatt": {"hex": true, "data": "00"}},
+          {"eibeoc": {"hex": true, "data": "00"}},
+          {"eibfmh": {"hex": true, "data": "00"}},
+          {"eibcompl": {"hex": true, "data": "00"}},
+          {"eibsig": {"hex": true, "data": "00"}},
+          {"eibconf": {"hex": true, "data": "00"}},
+          {"eiberr": {"hex": true, "data": "00"}},
+          {"eiberrcd": {"hex": true, "data": "00000000"}},
+          {"eibsynrb": {"hex": true, "data": "00"}},
+          {"eibnodat": {"hex": true, "data": "00"}},
+          {"eibresp": {"hex": true, "data": "00000000"}},
+          {"eibresp2": {"hex": true, "data": "00000000"}},
+          {"eibrldbk": {"hex": true, "data": "00"}}
+         ]},
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "abstime": {"length": 8, "value": {"hex": true, "data": "003930649558410C"}}
+       }
+      }
+     },
+     {"cics": {"command": "FORMATTIME", "module": "ZTPCICST", "csect": "ZTPCICST",
+       "before": {
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "ein": {"length": 13, "value": {"hex": true, "data": "4A04A08307A083000000000000"}},
+        "abstime": {"length": 8, "value": {"hex": true, "data": "003930649558410C"}},
+        "datesep": {"length": 1, "value": "-"},
+        "timesep": {"length": 1, "value": ":"}
+       },
+       "cputime": "0.000000",
+       "from": {"csect": "ZTPCICST", "offset": "000004DA"} ,
+       "after": {
+        "eib": {"length": 85, "value": [
+          {"eibtime": {"hex": true, "data": "0110558C"}},
+          {"eibdate": {"hex": true, "data": "0124204F"}},
+          {"eibtrnid": "TEST"},
+          {"eibtaskn": {"hex": true, "data": "0000076C"}},
+          {"eibtrmid": "<AAA"},
+          {"eibrsvd1": {"hex": true, "data": "0000"}},
+          {"eibcposn": {"hex": true, "data": "0000"}},
+          {"eibcalen": {"hex": true, "data": "0000"}},
+          {"eibaid": {"hex": true, "data": "00"}},
+          {"eibfn": {"hex": true, "data": "4A04"}},
+          {"eibrcode": {"hex": true, "data": "000000000000"}},
+          {"eibds": {"hex": true, "data": "0000000000000000"}},
+          {"eibreqid": {"hex": true, "data": "0000000000000000"}},
+          {"eibrsrce": "        "},
+          {"eibsync": {"hex": true, "data": "00"}},
+          {"eibfree": {"hex": true, "data": "00"}},
+          {"eibrecv": {"hex": true, "data": "00"}},
+          {"eibsend": {"hex": true, "data": "00"}},
+          {"eibatt": {"hex": true, "data": "00"}},
+          {"eibeoc": {"hex": true, "data": "00"}},
+          {"eibfmh": {"hex": true, "data": "00"}},
+          {"eibcompl": {"hex": true, "data": "00"}},
+          {"eibsig": {"hex": true, "data": "00"}},
+          {"eibconf": {"hex": true, "data": "00"}},
+          {"eiberr": {"hex": true, "data": "00"}},
+          {"eiberrcd": {"hex": true, "data": "00000000"}},
+          {"eibsynrb": {"hex": true, "data": "00"}},
+          {"eibnodat": {"hex": true, "data": "00"}},
+          {"eibresp": {"hex": true, "data": "00000000"}},
+          {"eibresp2": {"hex": true, "data": "00000000"}},
+          {"eibrldbk": {"hex": true, "data": "00"}}
+         ]},
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "yymmdd": {"length": 8, "value": "24-07-22"},
+        "time": {"length": 8, "value": "15:05:58"}
+       }
+      }
+     },
+     {"cics": {"command": "READ", "module": "ZTPCICST", "csect": "ZTPCICST",
+       "before": {
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "ein": {"length": 9, "value": {"hex": true, "data": "0602F0002700008400"}},
+        "file": {"length": 8, "value": "CUSTFILE"},
+        "length": {"length": 2, "value": {"hex": true, "data": "0061"}},
+        "ridfld": {"length": 6, "value": "000001"}
+       },
+       "cputime": "0.000000",
+       "from": {"csect": "ZTPCICST", "offset": "0000179A"} ,
+       "after": {
+        "eib": {"length": 85, "value": [
+          {"eibtime": {"hex": true, "data": "0110558C"}},
+          {"eibdate": {"hex": true, "data": "0124204F"}},
+          {"eibtrnid": "TEST"},
+          {"eibtaskn": {"hex": true, "data": "0000076C"}},
+          {"eibtrmid": "<AAA"},
+          {"eibrsvd1": {"hex": true, "data": "0000"}},
+          {"eibcposn": {"hex": true, "data": "0000"}},
+          {"eibcalen": {"hex": true, "data": "0000"}},
+          {"eibaid": {"hex": true, "data": "00"}},
+          {"eibfn": {"hex": true, "data": "0602"}},
+          {"eibrcode": {"hex": true, "data": "000000000000"}},
+          {"eibds": "CUSTFILE"},
+          {"eibreqid": {"hex": true, "data": "0000000000000000"}},
+          {"eibrsrce": "CUSTFILE"},
+          {"eibsync": {"hex": true, "data": "00"}},
+          {"eibfree": {"hex": true, "data": "00"}},
+          {"eibrecv": {"hex": true, "data": "00"}},
+          {"eibsend": {"hex": true, "data": "00"}},
+          {"eibatt": {"hex": true, "data": "00"}},
+          {"eibeoc": {"hex": true, "data": "00"}},
+          {"eibfmh": {"hex": true, "data": "00"}},
+          {"eibcompl": {"hex": true, "data": "00"}},
+          {"eibsig": {"hex": true, "data": "00"}},
+          {"eibconf": {"hex": true, "data": "00"}},
+          {"eiberr": {"hex": true, "data": "00"}},
+          {"eiberrcd": {"hex": true, "data": "00000000"}},
+          {"eibsynrb": {"hex": true, "data": "00"}},
+          {"eibnodat": {"hex": true, "data": "00"}},
+          {"eibresp": {"hex": true, "data": "00000000"}},
+          {"eibresp2": {"hex": true, "data": "00000000"}},
+          {"eibrldbk": {"hex": true, "data": "00"}}
+         ]},
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "into": {"length": 97, "value": [
+          "000001 SMITH",
+          {"repeat": 85, "data": " "}
+         ]},
+        "length": {"length": 2, "value": {"hex": true, "data": "0061"}},
+        "ridfld": {"length": 6, "value": "000001"}
+       }
+      }
+     },
+     {"cics": {"command": "REWRITE", "module": "ZTPCICST", "csect": "ZTPCICST",
+       "before": {
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "ein": {"length": 9, "value": {"hex": true, "data": "0606E0002700004000"}},
+        "file": {"length": 8, "value": "CUSTFILE"},
+        "from": {"length": 97, "value": [
+          "000001 SMITH",
+          {"repeat": 35, "data": " "},
+          "JOHN",
+          {"repeat": 46, "data": " "}
+         ]},
+        "length": {"length": 2, "value": {"hex": true, "data": "0061"}}
+       },
+       "cputime": "0.000000",
+       "from": {"csect": "ZTPCICST", "offset": "000018EE"} ,
+       "after": {
+        "eib": {"length": 85, "value": [
+          {"eibtime": {"hex": true, "data": "0110558C"}},
+          {"eibdate": {"hex": true, "data": "0124204F"}},
+          {"eibtrnid": "TEST"},
+          {"eibtaskn": {"hex": true, "data": "0000076C"}},
+          {"eibtrmid": "<AAA"},
+          {"eibrsvd1": {"hex": true, "data": "0000"}},
+          {"eibcposn": {"hex": true, "data": "0000"}},
+          {"eibcalen": {"hex": true, "data": "0000"}},
+          {"eibaid": {"hex": true, "data": "00"}},
+          {"eibfn": {"hex": true, "data": "0606"}},
+          {"eibrcode": {"hex": true, "data": "000000000000"}},
+          {"eibds": "CUSTFILE"},
+          {"eibreqid": {"hex": true, "data": "0000000000000000"}},
+          {"eibrsrce": "CUSTFILE"},
+          {"eibsync": {"hex": true, "data": "00"}},
+          {"eibfree": {"hex": true, "data": "00"}},
+          {"eibrecv": {"hex": true, "data": "00"}},
+          {"eibsend": {"hex": true, "data": "00"}},
+          {"eibatt": {"hex": true, "data": "00"}},
+          {"eibeoc": {"hex": true, "data": "00"}},
+          {"eibfmh": {"hex": true, "data": "00"}},
+          {"eibcompl": {"hex": true, "data": "00"}},
+          {"eibsig": {"hex": true, "data": "00"}},
+          {"eibconf": {"hex": true, "data": "00"}},
+          {"eiberr": {"hex": true, "data": "00"}},
+          {"eiberrcd": {"hex": true, "data": "00000000"}},
+          {"eibsynrb": {"hex": true, "data": "00"}},
+          {"eibnodat": {"hex": true, "data": "00"}},
+          {"eibresp": {"hex": true, "data": "00000000"}},
+          {"eibresp2": {"hex": true, "data": "00000000"}},
+          {"eibrldbk": {"hex": true, "data": "00"}}
+         ]},
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}}
+       }
+      }
+     },
+     {"cics": {"command": "PUT CONTAINER", "module": "ZTPCICST", "csect": "ZTPCICST",
+       "before": {
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "ein": {"length": 15, "value": {"hex": true, "data": "341670000720000000000000000000"}},
+        "from": {"length": 115, "value": [
+          "US24-07-2215:05:58000001UPDATE SUCCESSFUL",
+          {"repeat": 74, "data": " "}
+         ]},
+        "container": {"length": 16, "value": "MYCONTAINER"},
+        "flength": {"length": 4, "value": {"hex": true, "data": "00000073"}}
+       },
+       "cputime": "0.000000",
+       "from": {"csect": "ZTPCICST", "offset": "00000E38"} ,
+       "after": {
+        "eib": {"length": 85, "value": [
+          {"eibtime": {"hex": true, "data": "0110558C"}},
+          {"eibdate": {"hex": true, "data": "0124204F"}},
+          {"eibtrnid": "TEST"},
+          {"eibtaskn": {"hex": true, "data": "0000076C"}},
+          {"eibtrmid": "<AAA"},
+          {"eibrsvd1": {"hex": true, "data": "0000"}},
+          {"eibcposn": {"hex": true, "data": "0000"}},
+          {"eibcalen": {"hex": true, "data": "0000"}},
+          {"eibaid": {"hex": true, "data": "00"}},
+          {"eibfn": {"hex": true, "data": "3416"}},
+          {"eibrcode": {"hex": true, "data": "000000000000"}},
+          {"eibds": "CUSTFILE"},
+          {"eibreqid": {"hex": true, "data": "0000000000000000"}},
+          {"eibrsrce": "CUSTFILE"},
+          {"eibsync": {"hex": true, "data": "00"}},
+          {"eibfree": {"hex": true, "data": "00"}},
+          {"eibrecv": {"hex": true, "data": "00"}},
+          {"eibsend": {"hex": true, "data": "00"}},
+          {"eibatt": {"hex": true, "data": "00"}},
+          {"eibeoc": {"hex": true, "data": "00"}},
+          {"eibfmh": {"hex": true, "data": "00"}},
+          {"eibcompl": {"hex": true, "data": "00"}},
+          {"eibsig": {"hex": true, "data": "00"}},
+          {"eibconf": {"hex": true, "data": "00"}},
+          {"eiberr": {"hex": true, "data": "00"}},
+          {"eiberrcd": {"hex": true, "data": "00000000"}},
+          {"eibsynrb": {"hex": true, "data": "00"}},
+          {"eibnodat": {"hex": true, "data": "00"}},
+          {"eibresp": {"hex": true, "data": "00000000"}},
+          {"eibresp2": {"hex": true, "data": "00000000"}},
+          {"eibrldbk": {"hex": true, "data": "00"}}
+         ]},
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}}
+       }
+      }
+     },
+     {"cics": {"command": "RETURN", "module": "ZTPCICST", "csect": "ZTPCICST",
+       "before": {
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}},
+        "ein": {"length": 9, "value": {"hex": true, "data": "0E0800000700001000"}}
+       },
+       "cputime": "0.000000",
+       "from": {"csect": "ZTPCICST", "offset": "00001A76"} ,
+       "after": {
+        "eib": {"length": 85, "value": [
+          {"eibtime": {"hex": true, "data": "0110558C"}},
+          {"eibdate": {"hex": true, "data": "0124204F"}},
+          {"eibtrnid": "TEST"},
+          {"eibtaskn": {"hex": true, "data": "0000076C"}},
+          {"eibtrmid": "<AAA"},
+          {"eibrsvd1": {"hex": true, "data": "0000"}},
+          {"eibcposn": {"hex": true, "data": "0000"}},
+          {"eibcalen": {"hex": true, "data": "0000"}},
+          {"eibaid": {"hex": true, "data": "00"}},
+          {"eibfn": {"hex": true, "data": "0E08"}},
+          {"eibrcode": {"hex": true, "data": "000000000000"}},
+          {"eibds": "CUSTFILE"},
+          {"eibreqid": {"hex": true, "data": "0000000000000000"}},
+          {"eibrsrce": "CUSTFILE"},
+          {"eibsync": {"hex": true, "data": "00"}},
+          {"eibfree": {"hex": true, "data": "00"}},
+          {"eibrecv": {"hex": true, "data": "00"}},
+          {"eibsend": {"hex": true, "data": "00"}},
+          {"eibatt": {"hex": true, "data": "00"}},
+          {"eibeoc": {"hex": true, "data": "00"}},
+          {"eibfmh": {"hex": true, "data": "00"}},
+          {"eibcompl": {"hex": true, "data": "00"}},
+          {"eibsig": {"hex": true, "data": "00"}},
+          {"eibconf": {"hex": true, "data": "00"}},
+          {"eiberr": {"hex": true, "data": "00"}},
+          {"eiberrcd": {"hex": true, "data": "00000000"}},
+          {"eibsynrb": {"hex": true, "data": "00"}},
+          {"eibnodat": {"hex": true, "data": "00"}},
+          {"eibresp": {"hex": true, "data": "00000000"}},
+          {"eibresp2": {"hex": true, "data": "00000000"}},
+          {"eibrldbk": {"hex": true, "data": "00"}}
+         ]},
+        "communication": {"length": 0, "value": {"hex": true, "data": ""}}
+       }
+      }
+     }
+    ],
+    "cputime": "3.141877",
+    "from": {"csect": "ZTPCICST", "offset": "00001A76"} ,
+    "retcd": 0,
+    "after": {
+     "arg1": {"length": 85, "value": [
+       {"hex": true, "data": "0110558C012420"},
+       "|TEST",
+       {"hex": true, "data": "000007"},
+       "%<AAA",
+       {"hex": true, "data": "000000000000000E08000000000000"},
+       "CUSTFILE",
+       {"hex": true, "data": "0000000000000000"},
+       "CUSTFILE",
+       {"repeat": 26, "hex": true, "data": "00"}
+      ]}
+    }
+   }
+  }
+ ], "cicsdata": {
+  "transactionlist": [
+  ]
+ }, "ksdsdata": {
+  "ksdslist": [
+   {"file": "CUSTFILE", "maxlength": 97, "keylength": 6, "keyoffset": 1}
+  ]
+ }
+}
