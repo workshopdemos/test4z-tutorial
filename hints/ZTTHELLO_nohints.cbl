@@ -36,6 +36,7 @@
       * TUTORIAL - Use the "t4z message" snippet.
       *-----------------------------------------------------------------
 
+
            MOVE LOW-VALUES TO I_RUNFUNCTION
            MOVE 'ZTPHELLO' TO MODULENAME IN ZWS_RUNFUNCTION
            MOVE 'ZTPHELLO' TO FUNCTIONNAME IN ZWS_RUNFUNCTION

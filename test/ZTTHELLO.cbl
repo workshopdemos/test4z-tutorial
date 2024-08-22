@@ -33,12 +33,9 @@
            ENTRY 'sayHelloTest'.
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Use the "t4z message" snippet to write the following:
+      * TUTORIAL - Use the "t4z message" snippet.
       *-----------------------------------------------------------------
-      *     MOVE LOW-VALUES TO I_MESSAGE IN ZWS_MESSAGE
-      *     MOVE 'ZTTHELLO you there?' TO MESSAGETEXT IN ZWS_MESSAGE
-      *     DISPLAY MESSAGETEXT IN ZWS_MESSAGE
-      *     CALL ZTESTUT USING ZWS_MESSAGE
+
 
            MOVE LOW-VALUES TO I_RUNFUNCTION
            MOVE 'ZTPHELLO' TO MODULENAME IN ZWS_RUNFUNCTION
