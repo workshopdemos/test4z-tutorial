@@ -247,9 +247,6 @@
            SET ADDRESS OF ZLS_QSAM_RECORD
                 TO LASTCALL IN LS-ZSPQSAM-OUTREP-SPY
 
-           DISPLAY 'ZTTDOGWS spyCallbackOUTREP '
-                COMMAND IN ZLS_QSAM_RECORD(1:5)      
-
       *-----------------------------------------------------------------
       * For initial validation, we're only interested in valid WRITEs.
       *-----------------------------------------------------------------
@@ -290,10 +287,10 @@
       *-----------------------------------------------------------------
       * TUTORIAL - Use "t4z loaddata" snippet to write the following:
       *-----------------------------------------------------------------      
-            MOVE LOW-VALUES TO I_LOADDATA
-            MOVE 'ZTPDOGOS' TO MEMBERNAME IN ZWS_LOADDATA
-            CALL ZTESTUT USING ZWS_LOADDATA,
-                 LOADOBJECT IN WS-ZDATA-RECORDING
+      *     MOVE LOW-VALUES TO I_LOADDATA
+      *     MOVE 'ZTPDOGOS' TO MEMBERNAME IN ZWS_LOADDATA
+      *     CALL ZTESTUT USING ZWS_LOADDATA,
+      *          LOADOBJECT IN WS-ZDATA-RECORDING
 
       *-----------------------------------------------------------------
       * Initialize QSAM file access mock object for the ADOPTS DD
@@ -305,8 +302,8 @@
       *-----------------------------------------------------------------
       * TUTORIAL - Uncomment to use WS-ZDATA-RECORDING above:
       *-----------------------------------------------------------------     
-            SET LOADOBJECT IN ZWS_MOCKQSAM
-                 TO LOADOBJECT IN WS-ZDATA-RECORDING
+      *     SET LOADOBJECT IN ZWS_MOCKQSAM
+      *          TO LOADOBJECT IN WS-ZDATA-RECORDING
            
            MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
            CALL ZTESTUT USING ZWS_MOCKQSAM,
@@ -324,11 +321,11 @@
       *-----------------------------------------------------------------
       * TUTORIAL - Use "t4z mockqsam" snippet to write the following:
       *-----------------------------------------------------------------
-            MOVE LOW-VALUES TO I_MOCKQSAM
-            MOVE 'OUTREP' TO FILENAME IN ZWS_MOCKQSAM
-            MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
-            CALL ZTESTUT USING ZWS_MOCKQSAM,
-                 QSAMOBJECT IN WS-ZQSAM-OUTREP-MOCK
+      *     MOVE LOW-VALUES TO I_MOCKQSAM
+      *     MOVE 'OUTREP' TO FILENAME IN ZWS_MOCKQSAM
+      *     MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
+      *     CALL ZTESTUT USING ZWS_MOCKQSAM,
+      *          QSAMOBJECT IN WS-ZQSAM-OUTREP-MOCK
 
            EXIT.
 

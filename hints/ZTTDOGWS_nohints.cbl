@@ -247,9 +247,6 @@
            SET ADDRESS OF ZLS_QSAM_RECORD
                 TO LASTCALL IN LS-ZSPQSAM-OUTREP-SPY
 
-           DISPLAY 'ZTTDOGWS spyCallbackOUTREP '
-                COMMAND IN ZLS_QSAM_RECORD(1:5)      
-
       *-----------------------------------------------------------------
       * For initial validation, we're only interested in valid WRITEs.
       *-----------------------------------------------------------------
@@ -287,7 +284,7 @@
       *-----------------------------------------------------------------
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Use "t4z loaddata" snippet.
+      * TUTORIAL - Use "t4z loaddata" snippet to write the following:
       *-----------------------------------------------------------------      
 
       *-----------------------------------------------------------------
@@ -298,7 +295,7 @@
            MOVE 'ADOPTS' TO FILENAME IN ZWS_MOCKQSAM
            
       *-----------------------------------------------------------------
-      * TUTORIAL - Set LOADOBJECT.
+      * TUTORIAL - Uncomment to use WS-ZDATA-RECORDING above:
       *-----------------------------------------------------------------     
            
            MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
@@ -315,7 +312,7 @@
            DISPLAY 'ZTTDOGWS 110-MOCK-OUTREP-FILE'
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Use "t4z mockqsam" snippet.
+      * TUTORIAL - Use "t4z mockqsam" snippet to write the following:
       *-----------------------------------------------------------------
 
            EXIT.
