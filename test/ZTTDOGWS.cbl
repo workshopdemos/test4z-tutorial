@@ -72,6 +72,12 @@
        01  WS-RUN-PROGRAM USAGE FUNCTION-POINTER.
 
       *-----------------------------------------------------------------
+      * The return code from ZTPDOGOS; it's non-zero if there's a
+      * file I/O error or processing error.
+      *-----------------------------------------------------------------
+       01  WS-RETURN-CODE-SUT PIC S9(4) USAGE BINARY.
+
+      *-----------------------------------------------------------------
       * Count of WRITE commands from _SpyQSAM callback for OUTREP;
       * it will be compared against expected value as an initial
       * black box validation.
@@ -161,7 +167,7 @@
 
       *-----------------------------------------------------------------
       * Reference to ZTPDOGOS accumulator from variable spy. See
-      * 420-VALIDATION-GRAYBOX for more details.
+      * 430-VALIDATION-GRAYBOX for more details.
       *-----------------------------------------------------------------
        01  LS-ZTPDOGOS-ACCUMULATOR.
            05 BREED-ADOPTIONS PIC 9(3) OCCURS 9 TIMES.
@@ -169,7 +175,7 @@
       *-----------------------------------------------------------------
       * Reference to ZTPDOGOS record for _SpyQSAM callback and
       * spy history traversal. See entry 'spyCallbackOUTREP' and
-      * 410-VALIDATION-BLACKBOX-T2 for more details.
+      * 420-VALIDATION-BLACKBOX-T2 for more details.
       *-----------------------------------------------------------------
        01  LS-OUTREP-RECORD   PIC X(80).
 
@@ -211,15 +217,18 @@
       * and then validate the results.
       *-----------------------------------------------------------------
            PERFORM 300-RUN-PROGRAM-UNDER-TEST
-           PERFORM 400-VALIDATION-BLACKBOX-T1
-           PERFORM 410-VALIDATION-BLACKBOX-T2
-           PERFORM 420-VALIDATION-GRAYBOX
+
+           PERFORM 400-VALIDATION-NO-ERRORS
+           PERFORM 410-VALIDATION-BLACKBOX-T1
+           PERFORM 420-VALIDATION-BLACKBOX-T2
+           PERFORM 430-VALIDATION-GRAYBOX
 
       *-----------------------------------------------------------------
-      * The validations above log mismatches to SYSOUT, but they don't
-      * call Test4z _Fail. If a validation did not pass, fail the
-      * unit test; Test4z will immediately end this unit test and
-      * continue to the next one.
+      * The validations log mismatches to SYSOUT, but they don't
+      * call Test4z _Fail IF the mismatch won't disqualify all others.
+      * So, if we've reached this point and a validation did not pass,
+      * fail the unit test; Test4z will immediately end this unit test
+      * and continue to the next one.
       *-----------------------------------------------------------------
            IF WS-FAILED-VALIDATIONS > 0
                 PERFORM 530-FAIL-UNIT-TEST
@@ -254,7 +263,7 @@
                      STATUSCODE IN ZLS_QSAM_RECORD = '00'
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Record counter of actual WRITEs to OUTREP:
+      * TUTORIAL - Record count of actual WRITEs to OUTREP.
       *-----------------------------------------------------------------
       *         ADD 1 TO WS-ACTUAL-OUTREP-WRITES
 
@@ -285,7 +294,7 @@
       *-----------------------------------------------------------------
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Use "t4z loaddata" snippet to write the following:
+      * TUTORIAL - Use "t4z loaddata" snippet.
       *-----------------------------------------------------------------      
       *     MOVE LOW-VALUES TO I_LOADDATA
       *     MOVE 'ZTPDOGOS' TO MEMBERNAME IN ZWS_LOADDATA
@@ -300,7 +309,7 @@
            MOVE 'ADOPTS' TO FILENAME IN ZWS_MOCKQSAM
            
       *-----------------------------------------------------------------
-      * TUTORIAL - Uncomment to use WS-ZDATA-RECORDING above:
+      * TUTORIAL - Uncomment and set using WS-ZDATA-RECORDING above!
       *-----------------------------------------------------------------     
       *     SET LOADOBJECT IN ZWS_MOCKQSAM
       *          TO LOADOBJECT IN WS-ZDATA-RECORDING
@@ -319,7 +328,7 @@
            DISPLAY 'ZTTDOGWS 110-MOCK-OUTREP-FILE'
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Use "t4z mockqsam" snippet to write the following:
+      * TUTORIAL - Use "t4z mockqsam" snippet.
       *-----------------------------------------------------------------
       *     MOVE LOW-VALUES TO I_MOCKQSAM
       *     MOVE 'OUTREP' TO FILENAME IN ZWS_MOCKQSAM
@@ -399,6 +408,32 @@
            CALL ZTESTUT USING ZWS_GETFUNCTION, WS-RUN-PROGRAM
 
            CALL WS-RUN-PROGRAM
+           MOVE RETURN-CODE TO WS-RETURN-CODE-SUT
+
+           EXIT.
+
+      ******************************************************************
+      * If ZTPDOGOS reported an error, it's unlikely that further      *
+      * validations are meaningful, so fail (and end) the unit test.   *
+      ******************************************************************
+       400-VALIDATION-NO-ERRORS.
+
+           DISPLAY 'ZTTDOGWS 400-VALIDATION-NO-ERRORS'
+
+           IF WS-RETURN-CODE-SUT NOT = 0
+                ADD 1 TO WS-FAILED-VALIDATIONS
+
+                MOVE LOW-VALUES TO I_MESSAGE IN ZWS_MESSAGE
+                MOVE 'ZTTDOGWS non-zero return code, ending unit test' 
+                     TO MESSAGETEXT IN ZWS_MESSAGE
+                DISPLAY MESSAGETEXT IN ZWS_MESSAGE
+                DISPLAY 'Expected: 0000'
+                DISPLAY '     Got: ' WS-RETURN-CODE-SUT
+
+                CALL ZTESTUT USING ZWS_MESSAGE
+
+                PERFORM 530-FAIL-UNIT-TEST   
+           END-IF
 
            EXIT.
 
@@ -407,13 +442,13 @@
       * because it only considers resources accessible from outside of *
       * the program-under-test.                                        *
       ******************************************************************
-       400-VALIDATION-BLACKBOX-T1.
+       410-VALIDATION-BLACKBOX-T1.
 
-           DISPLAY 'ZTTDOGWS 400-VALIDATION-BLACKBOX-T1'
+           DISPLAY 'ZTTDOGWS 410-VALIDATION-BLACKBOX-T1'
 
       *-----------------------------------------------------------------
       * TUTORIAL - If mismatch of actual/expected, 
-      *            call 500-REPORT-COUNT-MISMATCH:
+      *            call 500-REPORT-COUNT-MISMATCH.
       *-----------------------------------------------------------------
       *    IF WS-ACTUAL-OUTREP-WRITES NOT = WS-EXPECTED-OUTREP-WRITES 
       *          PERFORM 500-REPORT-COUNT-MISMATCH
@@ -426,9 +461,9 @@
       * because it only considers resources accessible from outside of *
       * the program-under-test.                                        *
       ******************************************************************
-       410-VALIDATION-BLACKBOX-T2.
+       420-VALIDATION-BLACKBOX-T2.
 
-           DISPLAY 'ZTTDOGWS 410-VALIDATION-BLACKBOX-T2'
+           DISPLAY 'ZTTDOGWS 420-VALIDATION-BLACKBOX-T2'
 
            MOVE 0 TO WS-MISMATCHED-OUTREP-RECORDS
            MOVE 1 TO J
@@ -445,9 +480,12 @@
 
       *-----------------------------------------------------------------
       * TUTORIAL - Add DISPLAY for the command (operation)
-      *            in the QSAM spy's call history:
+      *            in the QSAM spy's call history.
       *-----------------------------------------------------------------
-      *         DISPLAY 'COMMAND=' COMMAND IN ZLS_QSAM_HISTORY(I)
+      *         DISPLAY 'ZTTDOGOS filename='
+      *              FILENAME IN ZLS_QSAM_HISTORY(I)
+      *              ' status=' STATUSCODE IN ZLS_QSAM_HISTORY(I)
+      *              ' command=' COMMAND IN ZLS_QSAM_HISTORY(I)
 
       *-----------------------------------------------------------------
       * The QSAM spy operation history includes OPEN, READ, WRITE,
@@ -498,9 +536,9 @@
       * box  validation because it accesses the internal state of the  *
       * program-under-test.                                            *
       ******************************************************************
-       420-VALIDATION-GRAYBOX.
+       430-VALIDATION-GRAYBOX.
 
-           DISPLAY 'ZTTDOGWS 420-VALIDATION-GRAYBOX'
+           DISPLAY 'ZTTDOGWS 430-VALIDATION-GRAYBOX'
 
       *-----------------------------------------------------------------
       * Get access to ZTPDOGOS' internal accumulator, specifically the
