@@ -1,21 +1,16 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. ZTPPARAT.
+       PROGRAM-ID. 'ZTPHELLO'.
 
       ******************************************************************
-      * Broadcom Test4z Unit Test Suite (UT) example.                  *
+      * Broadcom Test4z Tutorial.                                      *
       * Copyright (c) 2024 Broadcom. All Rights Reserved.              *
       *                                                                *
-      * This unit test example has been replaced by ZTPWATCH/ZTTSECTN. *
+      * See ZTTHELLO and tutorial instructions for details.            *
       ******************************************************************
 
        DATA DIVISION.
-       WORKING-STORAGE SECTION.
-       COPY ZTESTWS.
-       LINKAGE SECTION.
-
        PROCEDURE DIVISION.
 
-           DISPLAY 'ZTPPARAT this example replaced by ZTPWATCH'
-
+           DISPLAY 'ZTPHELLO says hello!'
            GOBACK.
-    
+           
