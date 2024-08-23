@@ -265,7 +265,7 @@
       *-----------------------------------------------------------------
       * TUTORIAL(5) - Record count of actual WRITEs to OUTREP.
       *-----------------------------------------------------------------
-      *       ADD 1 TO WS-ACTUAL-OUTREP-WRITES
+
 
       *-----------------------------------------------------------------
       * Write the output record to SYSOUT for unit test debugging.
@@ -296,10 +296,7 @@
       *-----------------------------------------------------------------
       * TUTORIAL(1) - Use "t4z loaddata" snippet.
       *-----------------------------------------------------------------      
-      *    MOVE LOW-VALUES TO I_LOADDATA
-      *    MOVE 'ZTPDOGOS' TO MEMBERNAME IN ZWS_LOADDATA
-      *    CALL ZTESTUT USING ZWS_LOADDATA, 
-      *         LOADOBJECT IN WS-ZDATA-RECORDING
+
 
       *-----------------------------------------------------------------
       * Initialize QSAM file access mock object for the ADOPTS DD
@@ -307,8 +304,7 @@
       *-----------------------------------------------------------------
            MOVE LOW-VALUES TO I_MOCKQSAM
            MOVE 'ADOPTS' TO FILENAME IN ZWS_MOCKQSAM
-      *    SET LOADOBJECT IN ZWS_MOCKQSAM
-      *         TO LOADOBJECT IN WS-ZDATA-RECORDING
+
            MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
            CALL ZTESTUT USING ZWS_MOCKQSAM,
                 QSAMOBJECT IN WS-ZQSAM-ADOPTS-MOCK
@@ -328,11 +324,7 @@
       *-----------------------------------------------------------------
       * TUTORIAL(3) - Use "t4z mockqsam" snippet.
       *-----------------------------------------------------------------
-      *    MOVE LOW-VALUES TO I_MOCKQSAM
-      *    MOVE 'OUTREP' TO FILENAME IN ZWS_MOCKQSAM
-      *    MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
-      *    CALL ZTESTUT USING ZWS_MOCKQSAM, 
-      *         QSAMOBJECT IN WS-ZQSAM-OUTREP-MOCK
+
 
            EXIT.
 
@@ -361,11 +353,7 @@
       *-----------------------------------------------------------------
       * TUTORIAL(4) - Use "t4z spyqsam" snippet.
       *-----------------------------------------------------------------
-      *    MOVE LOW-VALUES TO I_SPYQSAM
-      *    SET CALLBACK IN ZWS_SPYQSAM TO ENTRY 'spyCallbackOUTREP'
-      *    MOVE 'OUTREP' TO FILENAME IN ZWS_SPYQSAM
-      *    CALL ZTESTUT USING ZWS_SPYQSAM,
-      *         QSAMSPYOBJECT IN WS-ZSPQSAM-OUTREP-SPY
+
 
            EXIT.
 
@@ -451,9 +439,7 @@
       * TUTORIAL(6) - If mismatch of actual/expected, 
       *               call 500-REPORT-COUNT-MISMATCH.
       *-----------------------------------------------------------------
-      *    IF WS-ACTUAL-OUTREP-WRITES NOT = WS-EXPECTED-OUTREP-WRITES
-      *         PERFORM 500-REPORT-COUNT-MISMATCH
-      *    END-IF
+
 
            EXIT.
 
@@ -483,10 +469,7 @@
       * TUTORIAL(7) - Add DISPLAY for the command (operation)
       *               in the QSAM spy's call history.
       *-----------------------------------------------------------------
-      *       DISPLAY 'ZTTDOGOS filename='
-      *            FILENAME IN ZLS_QSAM_HISTORY(I)
-      *            ' status=' STATUSCODE IN ZLS_QSAM_HISTORY(I)
-      *            ' command=' COMMAND IN ZLS_QSAM_HISTORY(I)
+
 
       *-----------------------------------------------------------------
       * The QSAM spy operation history includes OPEN, READ, WRITE,
