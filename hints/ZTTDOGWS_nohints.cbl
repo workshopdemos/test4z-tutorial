@@ -263,7 +263,7 @@
                      STATUSCODE IN ZLS_QSAM_RECORD = '00'
 
       *-----------------------------------------------------------------
-      * TUTORIAL(4) - Record count of actual WRITEs to OUTREP.
+      * TUTORIAL(5) - Record count of actual WRITEs to OUTREP.
       *-----------------------------------------------------------------
 
 
@@ -350,11 +350,10 @@
 
            DISPLAY 'ZTTDOGWS 210-REGISTER-OUTREP-SPY'
 
-           MOVE LOW-VALUES TO I_SPYQSAM
-           SET CALLBACK IN ZWS_SPYQSAM TO ENTRY 'spyCallbackOUTREP'
-           MOVE 'OUTREP' TO FILENAME IN ZWS_SPYQSAM
-           CALL ZTESTUT USING ZWS_SPYQSAM,
-                QSAMSPYOBJECT IN WS-ZSPQSAM-OUTREP-SPY
+      *-----------------------------------------------------------------
+      * TUTORIAL(4) - Use "t4z spyqsam" snippet.
+      *-----------------------------------------------------------------
+
 
            EXIT.
 
@@ -437,7 +436,7 @@
            DISPLAY 'ZTTDOGWS 410-VALIDATION-BLACKBOX-T1'
 
       *-----------------------------------------------------------------
-      * TUTORIAL(5) - If mismatch of actual/expected, 
+      * TUTORIAL(6) - If mismatch of actual/expected, 
       *               call 500-REPORT-COUNT-MISMATCH.
       *-----------------------------------------------------------------
 
@@ -467,7 +466,7 @@
                      UNTIL I > SIZE_ IN CALLS IN WS-ZSPQSAM-OUTREP-SPY
 
       *-----------------------------------------------------------------
-      * TUTORIAL(6) - Add DISPLAY for the command (operation)
+      * TUTORIAL(7) - Add DISPLAY for the command (operation)
       *               in the QSAM spy's call history.
       *-----------------------------------------------------------------
 
