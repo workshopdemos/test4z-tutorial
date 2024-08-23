@@ -8,7 +8,7 @@
       *                                                                *
       * This example unit test suite validates the correct operation   *
       * of the SUT / program-under-test, ZTPDOGOS. For more details,   *
-      * refer to the tutorial instructions.                            *
+      * refer to the exercise instructions.                            *
       *                                                                *
       ******************************************************************
 
@@ -263,7 +263,7 @@
                      STATUSCODE IN ZLS_QSAM_RECORD = '00'
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Record count of actual WRITEs to OUTREP.
+      * TUTORIAL(4) - Record count of actual WRITEs to OUTREP.
       *-----------------------------------------------------------------
 
 
@@ -294,7 +294,7 @@
       *-----------------------------------------------------------------
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Use "t4z loaddata" snippet.
+      * TUTORIAL(1) - Use "t4z loaddata" snippet.
       *-----------------------------------------------------------------      
 
 
@@ -304,15 +304,13 @@
       *-----------------------------------------------------------------
            MOVE LOW-VALUES TO I_MOCKQSAM
            MOVE 'ADOPTS' TO FILENAME IN ZWS_MOCKQSAM
-           
-      *-----------------------------------------------------------------
-      * TUTORIAL - Uncomment and set using WS-ZDATA-RECORDING above!
-      *-----------------------------------------------------------------     
 
-           
            MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
            CALL ZTESTUT USING ZWS_MOCKQSAM,
                 QSAMOBJECT IN WS-ZQSAM-ADOPTS-MOCK
+      *-----------------------------------------------------------------
+      * TUTORIAL(2) - Complete SET LOADOBJECT above.
+      *-----------------------------------------------------------------   
 
            EXIT.
 
@@ -324,7 +322,7 @@
            DISPLAY 'ZTTDOGWS 110-MOCK-OUTREP-FILE'
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Use "t4z mockqsam" snippet.
+      * TUTORIAL(3) - Use "t4z mockqsam" snippet.
       *-----------------------------------------------------------------
 
 
@@ -439,8 +437,8 @@
            DISPLAY 'ZTTDOGWS 410-VALIDATION-BLACKBOX-T1'
 
       *-----------------------------------------------------------------
-      * TUTORIAL - If mismatch of actual/expected, 
-      *            call 500-REPORT-COUNT-MISMATCH.
+      * TUTORIAL(5) - If mismatch of actual/expected, 
+      *               call 500-REPORT-COUNT-MISMATCH.
       *-----------------------------------------------------------------
 
 
@@ -469,8 +467,8 @@
                      UNTIL I > SIZE_ IN CALLS IN WS-ZSPQSAM-OUTREP-SPY
 
       *-----------------------------------------------------------------
-      * TUTORIAL - Add DISPLAY for the command (operation)
-      *            in the QSAM spy's call history.
+      * TUTORIAL(6) - Add DISPLAY for the command (operation)
+      *               in the QSAM spy's call history.
       *-----------------------------------------------------------------
 
 
