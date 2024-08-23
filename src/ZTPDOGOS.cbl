@@ -109,7 +109,7 @@
            05 FILLER                 PIC X(13) VALUE ' WAS ADOPTED '.
            05 ADOPTED-AMOUNT         PIC 9(3).
            05 FILLER                 PIC X(6)  VALUE ' TIMES'.
-           05 FILLER                 PIC X(22).
+           05 FILLER                 PIC X(22) VALUE SPACES.
 
        PROCEDURE DIVISION.
 
