@@ -452,7 +452,7 @@
       *               call 500-REPORT-COUNT-MISMATCH.
       *-----------------------------------------------------------------
       *    IF WS-ACTUAL-OUTREP-WRITES NOT = WS-EXPECTED-OUTREP-WRITES
-      *             PERFORM 500-REPORT-COUNT-MISMATCH
+      *         PERFORM 500-REPORT-COUNT-MISMATCH
       *    END-IF
 
            EXIT.
