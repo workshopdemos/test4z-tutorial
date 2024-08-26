@@ -31,6 +31,12 @@ Follow these steps to copy the exercise source files:
   The Test4z installation command `t4z init` regenerates the configuration
   files above based on your responses (host name, user name, HLQ, etc.).
 
+### Tutorial instructions
+
+1. Start with the tutorial's step-by-step [instructions](https://github.com/workshopdemos/test4z-tutorial/blob/main/docs/Test4z-Tutorial.pdf)
+2. If you want to skip steps or just review the final code, see the [hints folder](https://github.com/workshopdemos/test4z-tutorial/tree/main/hints).
+
+
 ### References
 
 * [Test4z homepage](https://mainframe.broadcom.com/test4z)
