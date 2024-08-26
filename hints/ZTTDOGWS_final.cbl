@@ -359,7 +359,7 @@
            DISPLAY 'ZTTDOGWS 210-REGISTER-OUTREP-SPY'
 
       *-----------------------------------------------------------------
-      * TUTORIAL(4) - Use "t4z spyqsam" snippet.
+      * TUTORIAL(4) - Use "t4z spyqsam with callback" snippet.
       *-----------------------------------------------------------------
            MOVE LOW-VALUES TO I_SPYQSAM
            SET CALLBACK IN ZWS_SPYQSAM TO ENTRY 'spyCallbackOUTREP'
