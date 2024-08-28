@@ -78,9 +78,9 @@
        01  WS-RETURN-CODE-SUT PIC S9(4) USAGE BINARY.
 
       *-----------------------------------------------------------------
-      * Count of WRITE commands from _SpyQSAM callback for OUTREP;
-      * it will be compared against expected value as an initial
-      * black box validation.
+      * TUTORIAL (T9): Count of WRITE commands from _SpyQSAM callback
+      * for OUTREP; it will be compared against expected value as an
+      * initial black box validation.
       *-----------------------------------------------------------------
        01  WS-ACTUAL-OUTREP-WRITES   PIC 9(3) VALUE 0.
        01  WS-EXPECTED-OUTREP-WRITES PIC 9(3) VALUE 9.
@@ -232,6 +232,8 @@
       *-----------------------------------------------------------------
            IF WS-FAILED-VALIDATIONS > 0
                 PERFORM 530-FAIL-UNIT-TEST
+           ELSE
+                DISPLAY 'ZTTDOGWS unit test status: PASS'
            END-IF
 
            GOBACK.
@@ -263,7 +265,7 @@
                      STATUSCODE IN ZLS_QSAM_RECORD = '00'
 
       *-----------------------------------------------------------------
-      * TUTORIAL(5) - Record count of actual WRITEs to OUTREP.
+      * TUTORIAL (T5) - Record count of actual WRITEs to OUTREP.
       *-----------------------------------------------------------------
 
 
@@ -294,7 +296,7 @@
       *-----------------------------------------------------------------
 
       *-----------------------------------------------------------------
-      * TUTORIAL(1) - Use "t4z loaddata" snippet.
+      * TUTORIAL (T1) - Use "t4z loaddata" snippet.
       *-----------------------------------------------------------------      
 
 
@@ -304,12 +306,13 @@
       *-----------------------------------------------------------------
            MOVE LOW-VALUES TO I_MOCKQSAM
            MOVE 'ADOPTS' TO FILENAME IN ZWS_MOCKQSAM
-
+      *    SET LOADOBJECT IN ZWS_MOCKQSAM
+      *         TO LOADOBJECT IN WS-ZDATA-RECORDING
            MOVE 80 TO RECORDSIZE IN ZWS_MOCKQSAM
            CALL ZTESTUT USING ZWS_MOCKQSAM,
                 QSAMOBJECT IN WS-ZQSAM-ADOPTS-MOCK
       *-----------------------------------------------------------------
-      * TUTORIAL(2) - Complete SET LOADOBJECT above.
+      * TUTORIAL (T2) - Uncomment the SET LOADOBJECT above.
       *-----------------------------------------------------------------   
 
            EXIT.
@@ -322,7 +325,7 @@
            DISPLAY 'ZTTDOGWS 110-MOCK-OUTREP-FILE'
 
       *-----------------------------------------------------------------
-      * TUTORIAL(3) - Use "t4z mockqsam" snippet.
+      * TUTORIAL (T3) - Use "t4z mockqsam" snippet.
       *-----------------------------------------------------------------
 
 
@@ -351,7 +354,7 @@
            DISPLAY 'ZTTDOGWS 210-REGISTER-OUTREP-SPY'
 
       *-----------------------------------------------------------------
-      * TUTORIAL(4) - Use "t4z spyqsam with callback" snippet.
+      * TUTORIAL (T4) - Use "t4z spyqsam with callback" snippet.
       *-----------------------------------------------------------------
 
 
@@ -436,8 +439,8 @@
            DISPLAY 'ZTTDOGWS 410-VALIDATION-BLACKBOX-T1'
 
       *-----------------------------------------------------------------
-      * TUTORIAL(6) - If mismatch of actual/expected, 
-      *               call 500-REPORT-COUNT-MISMATCH.
+      * TUTORIAL (T6) - If mismatch of actual/expected, 
+      *                 call 500-REPORT-COUNT-MISMATCH.
       *-----------------------------------------------------------------
 
 
@@ -466,8 +469,8 @@
                      UNTIL I > SIZE_ IN CALLS IN WS-ZSPQSAM-OUTREP-SPY
 
       *-----------------------------------------------------------------
-      * TUTORIAL(7) - Add DISPLAY for the command (operation)
-      *               in the QSAM spy's call history.
+      * TUTORIAL (T7) - Add DISPLAY for the command (operation)
+      *                 in the QSAM spy's call history.
       *-----------------------------------------------------------------
 
 
@@ -541,12 +544,10 @@
            END-IF
 
       *-----------------------------------------------------------------
-      * Check the values in the ACCUMULATOR record and report if
-      * one of the totals doesn't match an expected total.
+      * TUTORIAL (T8): Check the values in the ACCUMULATOR record and
+      * report if one of the totals doesn't match an expected total.
       *-----------------------------------------------------------------
-           IF WS-FINAL-ACCUMULATOR NOT = WS-EXPECTED-ACCUMULATOR
-                PERFORM 520-REPORT-TOTALS-MISMATCH
-           END-IF
+
 
            EXIT.
 
@@ -599,6 +600,7 @@
                 WS-FAILED-VALIDATIONS DELIMITED BY SIZE
                 ' validations' DELIMITED BY SIZE
                 INTO FAILMESSAGE IN ZWS_FAIL
+           DISPLAY 'ZTTDOGWS ' FAILMESSAGE IN ZWS_FAIL
            CALL ZTESTUT USING ZWS_FAIL
 
            EXIT.
